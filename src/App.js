@@ -37,7 +37,7 @@ import { useDispatch } from "react-redux";
         <div className="App">
             <Navbar />
             <Routes>
-                <Route exact path="/" element={<Home />}>
+                <Route exact path="/Contact_List_App" element={<Home />}>
 
                 </Route>
                 <Route path="/add" element={<AddContact />}>
