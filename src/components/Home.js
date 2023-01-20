@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-// import { toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import "../index.css";
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
 
     const deleteContact = (id) => {
         dispatch({ type: 'DELETE_CONTACT', payload: id });
-        // toast.success('Contact deleted successfully!');
+        toast.success('Contact deleted successfully!');
     }
 
     return (
